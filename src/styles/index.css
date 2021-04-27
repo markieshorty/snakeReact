@@ -11,3 +11,42 @@
 body {
   color: var(--color-main);
 }
+
+.arena{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+}
+
+.snakeHead {
+  position: absolute;
+  height: 7px;
+  width: 7px;
+  background-color: green;
+}
+
+.snakeBodyCell {
+  position: absolute;
+  height: 7px;
+  width: 7px;
+  background-color: green;
+}
+
+.apple {
+  position: absolute;
+  height: 7px;
+  width: 7px;
+  background-color: red;
+  border-radius: 3px;
+}
+
+.gameOver{
+  position: absolute;
+  top: 20px;
+  left: 40px;
+}
+
+.gameOver h2 {
+  font-size: 40px;
+}
