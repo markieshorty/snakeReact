@@ -102,6 +102,7 @@ const newAnimationFrame = (
   setSnakePosition,
 ) => {
   let newSnakePosition = {};
+  // clone object
   newSnakePosition.body = JSON.parse(JSON.stringify(snakePosition.body));
 
   if (directionOfTravel === constants.DIRECTIONS.RIGHT) {
@@ -126,6 +127,7 @@ const newAnimationFrame = (
     newApple = utils.getNewApple();
   }
 
+  // GAME OVER IF SNAKE HITS EDGE OF CAGE OR HITS ITS OWN BODY
   gameOver =
     newSnakePosition.x < 0 ||
     newSnakePosition.x >
